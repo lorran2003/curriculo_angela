@@ -1,12 +1,12 @@
 :root {
-    --page-width: 980px;
+    --page-width: 1040px;
     --green: #63b383;
     --light-green: #dff4e8;
     --text: #2c2c2c;
     --muted: #5e5e5e;
     --line: #3f3f3f;
     --paper: #ffffff;
-    --bg: #f0f0f0;
+    --bg: #fff;
 }
 
 * {
@@ -25,25 +25,25 @@ body {
     margin: 0 auto;
     background: var(--paper);
     min-height: 100vh;
-    padding: 0 32px 28px;
+    padding: 0 28px 22px;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
 }
 
 .top-bar {
-    height: 34px;
+    height: 30px;
     background: var(--green);
-    margin-bottom: 22px;
+    margin-bottom: 18px;
 }
 
 .resume-grid {
     display: grid;
     grid-template-columns: minmax(0, 1.9fr) minmax(230px, 0.95fr);
-    gap: 34px;
+    gap: 28px;
 }
 
 .hero h1 {
     margin: 0 0 6px;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 1.05;
     font-weight: 800;
     letter-spacing: 0.2px;
@@ -53,20 +53,20 @@ body {
 .side-section,
 .hero {
     border-bottom: 2px solid var(--line);
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
 }
 
 .section-heading {
     display: flex;
     align-items: center;
     gap: 14px;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
 }
 
 .section-heading h2 {
     margin: 0;
-    font-size: 17px;
+    font-size: 28px;
     line-height: 1;
     font-weight: 800;
 }
@@ -84,14 +84,14 @@ body {
 .affiliations-list li,
 .language-block p,
 .contact-item {
-    font-size: 13.5px;
-    line-height: 1.55;
+    font-size: 24px;
+    line-height: 1.45;
     margin: 0;
 }
 
 .job,
 .education {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .job:last-child,
@@ -102,14 +102,14 @@ body {
 .job-header h3,
 .education h3 {
     margin: 0 0 4px;
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 800;
 }
 
 .job-header p,
 .education p {
     color: var(--muted);
-    margin-bottom: 4px;
+    margin-bottom: 3px;
 }
 
 .education p strong {
@@ -117,12 +117,12 @@ body {
 }
 
 ul {
-    margin: 6px 0 0;
+    margin: 4px 0 0;
     padding-left: 14px;
 }
 
 li + li {
-    margin-top: 4px;
+    margin-top: 2px;
 }
 
 .sidebar {
@@ -142,7 +142,7 @@ li + li {
 }
 
 .side-heading h2 {
-    font-size: 16px;
+    font-size: 27px;
 }
 
 .contact-list,
@@ -159,20 +159,20 @@ li + li {
 }
 
 .contact-item + .contact-item {
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .contact-item::before {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 14px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .contact-item.location::before {
     content: "\25CF";
-    font-size: 10px;
+    font-size: 20px;
     top: 3px;
 }
 
@@ -198,7 +198,7 @@ li + li {
 }
 
 .language-block {
-    font-size: 13.5px;
+    font-size: 24px;
 }
 
 .language-line {
@@ -233,5 +233,22 @@ li + li {
 
     .photo-card {
         max-width: 240px;
+    }
+}
+
+@media print {
+    body {
+        background: var(--paper);
+    }
+
+    .resume-page {
+        width: 100%;
+        min-height: auto;
+        padding: 0 18px 14px;
+        box-shadow: none;
+    }
+
+    .resume-grid {
+        gap: 22px;
     }
 }
