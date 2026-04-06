@@ -43,7 +43,7 @@ body {
 
 .hero h1 {
     margin: 0 0 6px;
-    font-size: 40px;
+    font-size: 35px;
     line-height: 1.05;
     font-weight: 800;
     letter-spacing: 0.2px;
@@ -66,7 +66,7 @@ body {
 
 .section-heading h2 {
     margin: 0;
-    font-size: 28px;
+    font-size: 23px;
     line-height: 1;
     font-weight: 800;
 }
@@ -84,7 +84,7 @@ body {
 .affiliations-list li,
 .language-block p,
 .contact-item {
-    font-size: 24px;
+    font-size: 19px;
     line-height: 1.45;
     margin: 0;
 }
@@ -102,7 +102,7 @@ body {
 .job-header h3,
 .education h3 {
     margin: 0 0 4px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 800;
 }
 
@@ -142,7 +142,7 @@ li + li {
 }
 
 .side-heading h2 {
-    font-size: 27px;
+    font-size: 22px;
 }
 
 .contact-list,
@@ -166,13 +166,13 @@ li + li {
     position: absolute;
     left: 0;
     top: 0;
-    font-size: 24px;
+    font-size: 19px;
     font-weight: 700;
 }
 
 .contact-item.location::before {
     content: "\25CF";
-    font-size: 20px;
+    font-size: 15px;
     top: 3px;
 }
 
@@ -198,7 +198,7 @@ li + li {
 }
 
 .language-block {
-    font-size: 24px;
+    font-size: 19px;
 }
 
 .language-line {
